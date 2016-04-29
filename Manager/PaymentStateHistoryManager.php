@@ -10,8 +10,9 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\PaymentBundle\Manager\Front;
+namespace WellCommerce\Bundle\PaymentBundle\Manager;
 
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 use WellCommerce\Bundle\CoreBundle\Manager\Front\AbstractFrontManager;
 use WellCommerce\Bundle\PaymentBundle\Entity\PaymentInterface;
 
@@ -20,7 +21,7 @@ use WellCommerce\Bundle\PaymentBundle\Entity\PaymentInterface;
  *
  * @author Adam Piotrowski <adam@wellcommerce.org>
  */
-class PaymentStateHistoryManager extends AbstractFrontManager
+class PaymentStateHistoryManager extends AbstractManager
 {
     public function createPaymentStateHistory(PaymentInterface $payment)
     {

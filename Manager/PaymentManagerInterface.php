@@ -10,9 +10,10 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\PaymentBundle\Manager\Front;
+namespace WellCommerce\Bundle\PaymentBundle\Manager;
 
 use WellCommerce\Bundle\CoreBundle\Manager\Front\FrontManagerInterface;
+use WellCommerce\Bundle\CoreBundle\Manager\ManagerInterface;
 use WellCommerce\Bundle\OrderBundle\Entity\OrderInterface;
 use WellCommerce\Bundle\PaymentBundle\Entity\PaymentInterface;
 use WellCommerce\Bundle\PaymentBundle\Processor\PaymentProcessorInterface;
@@ -22,7 +23,7 @@ use WellCommerce\Bundle\PaymentBundle\Processor\PaymentProcessorInterface;
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-interface PaymentManagerInterface extends FrontManagerInterface
+interface PaymentManagerInterface extends ManagerInterface
 {
     /**
      * Returns the first payment for order or creates a new one
